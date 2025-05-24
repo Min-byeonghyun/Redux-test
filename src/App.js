@@ -1,5 +1,5 @@
-// import Modal from "./components/modal/Modal";
-// import OpenModalButton from "./components/OpenModalButton";
+import Modal from "./components/modal/Modal";
+import OpenModalButton from "./components/OpenModalButton";
 
 import { CountStore } from "./zustand";
 import Count from "./components/Count";
@@ -8,8 +8,8 @@ function App() {
 
   return (
     <div className="App">
-      {/* <OpenModalButton />
-      <Modal /> */}
+      <OpenModalButton />
+      <Modal />
       <p>{count}</p>
       <Count />
       <button onClick={Plus}> 증가 </button>
