@@ -1,15 +1,12 @@
-import React from "react";
-import { HashRouter as Router, Route, Routes } from "react-router-dom";
-import Home from "./components/Home";
-import Detail from "./components/Detail";
+import Modal from "./components/modal/Modal";
+import OpenModalButton from "./components/OpenModalButton";
+
 function App() {
   return (
-    <Router>
-      <Routes>
-      <Route path="/" element={<Home/>}/>
-      <Route path="/:id" element={<Detail/>}/>
-      </Routes>
-    </Router>
+    <div className="App">
+      <OpenModalButton />
+      <Modal />
+    </div>
   );
 }
 
